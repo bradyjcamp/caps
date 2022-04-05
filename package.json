@@ -1,0 +1,24 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradyjcamp/caps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradyjcamp/caps/issues"
+  },
+  "homepage": "https://github.com/bradyjcamp/caps#readme",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "jest": "^27.5.1"
+  }
+}
