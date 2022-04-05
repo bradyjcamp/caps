@@ -1,10 +1,10 @@
 'use strict';
 
-const Events = require('events');
+const EventEmitter = require('events');
 const Chance = require('chance');
 
 
-const eventPool = new Events();
+const eventPool = new EventEmitter();
 const chance = new Chance();
 
 module.exports = {
