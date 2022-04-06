@@ -3,6 +3,7 @@
 
 const io = require('socket.io')(3000);
 const caps = io.of('/caps');
+const eventHandler = require('../lib/event-logger.js');
 
 //---io.on
 caps.on('connection', socket => {
@@ -11,17 +12,17 @@ caps.on('connection', socket => {
   
 
   socket.on('PICKUP', (payload) => {
-    console.log('Hit PICKUP');
+    eventHandler('PICKUP', payload);
     caps.emit('PICKUP', payload);
   });
 
   socket.on('IN-TRANSIT', (payload) => {
-    console.log('Hit IN-TRANSIT');
+    eventHandler('IN-TRANSIT', payload);
     caps.emit('IN-TRANSIT', payload);
   });
 
   socket.on('DELIVERED', (payload) => {
-    console.log('Hit DELIVERED');
+    eventHandler('DELIVERED', payload);
     caps.emit('DELIVERED', payload);
   });
 
