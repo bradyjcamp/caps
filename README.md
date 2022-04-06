@@ -17,7 +17,8 @@ Once installed, run `npm start`.
 
 ## Contributors / Authors
 
-- Brady Camp
+- Brady Camp 
+- Tanner Percival
 
 ## Features / Routes
 
