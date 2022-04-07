@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/bradyjcamp/caps#readme",
   "dependencies": {
     "chance": "^1.1.8",
+    "dotenv": "^16.0.0",
     "jest": "^27.5.1",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1"
